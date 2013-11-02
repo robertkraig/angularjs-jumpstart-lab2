@@ -1,0 +1,16 @@
+<div class="container">
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <input type="text" class="form-control" ng-model="searchTerm" placeholder="Movie Title" />
+        </div>
+        <button ng-click="search(searchTerm)" class="btn btn-primary">Search</button>
+    </form>
+    <div class="row movie-list-item" ng-repeat="movie in movies">
+        <a href="#/movies/{{movie.id}}">
+            <div class="col-xs-2">
+                <img ng-src="{{movie.posters.thumbnail}}" />
+            </div>
+            <div class="col-xs-6 movieTitle">{{movie.title}}</div>
+        </a>
+    </div>
+</div>

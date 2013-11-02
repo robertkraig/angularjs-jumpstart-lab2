@@ -1,0 +1,39 @@
+<div class="container">
+    <div>
+        <a href="#movies"> Home</a>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <img ng-src="{{movie.posters.original}}" width='300' />
+        </div>
+        <div class="col-xs-6">
+            {{movie.synopsis}}
+        </div>
+    </div>
+    <div>Runtime: {{movie.runtime | minutesToTime }}</div>
+
+    <div>
+        <div class="review" ng-repeat="review in reviews">
+            <div class="review-author">{{review.author}}</div>
+            <div class="review-body">{{review.body}}</div>
+        </div>
+    </div>
+
+    <div class="review review-input">
+        <form role="form">
+            <div class="form-group">
+                <label>Your Name:</label>
+                <input type="text" class="form-control" placeholder="Enter name" ng-model="newReviewAuthor">
+            </div>
+            <div class="form-group">
+                <label>Review</label>
+                <textarea class="form-control" ng-model="newReviewBody"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-default" ng-click="saveMovie(movie)">Add Review</button>
+        </form>
+
+    </div>
+
+</div>

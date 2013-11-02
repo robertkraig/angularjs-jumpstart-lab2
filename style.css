@@ -1,0 +1,41 @@
+.container{
+    margin-top:10px;
+}
+
+.movie-list-item{
+    margin-top:10px;
+    padding-bottom:10px;
+    border:1px solid #E1E2E5;
+    padding:0px 5px 0px 5px;
+    border-radius:5px;
+}
+
+.movie-list-item:hover{
+    background-color:#F1F2F6;
+    border:1px solid #4870A6;
+    cursor:pointer;
+}
+
+.movieTitle{
+    font-size:15pt;
+    color:#395A8E;
+    margin-top:25px;
+    margin-left:-40px;
+}
+
+.review{
+    padding:10px;
+    border-bottom:1px solid #DEDFE3;
+}
+
+.review-author{
+    font-weight:bold;
+}
+
+.review-input{
+    margin-top:40px;
+    margin-bottom:20px;
+    border:1px solid #88A5D5;
+    border-radius:5px;
+    padding:10px;
+}
